@@ -1,0 +1,7 @@
+{
+  "name": "redux",
+  "packageManager": "yarn@3.8.3",
+  "dependencies": {
+    "redux": "^5.0.1"
+  }
+}
