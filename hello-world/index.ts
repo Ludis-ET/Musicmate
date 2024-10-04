@@ -1,8 +1,3 @@
-let age = 123_456789;
-let course = "TYpescript";
-let is_published = true;
-let level;
+let numbers = [1,2,3,4]
 
-function render(document: any) {
-  console.log(document);
-}
+numbers.forEach(n => n)
