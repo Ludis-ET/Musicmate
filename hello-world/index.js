@@ -1,1 +1,3 @@
-var age = 20;
+"use strict";
+let user = [1, "Ludis"];
+user.push(1);
