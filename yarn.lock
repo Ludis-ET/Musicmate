@@ -2736,6 +2736,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"type@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "type@workspace:."
+  dependencies:
+    "@eslint/js": "npm:^9.11.1"
+    "@types/react": "npm:^18.3.10"
+    "@types/react-dom": "npm:^18.3.0"
+    "@vitejs/plugin-react": "npm:^4.3.2"
+    eslint: "npm:^9.11.1"
+    eslint-plugin-react-hooks: "npm:^5.1.0-rc.0"
+    eslint-plugin-react-refresh: "npm:^0.4.12"
+    globals: "npm:^15.9.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    typescript: "npm:^5.5.3"
+    typescript-eslint: "npm:^8.7.0"
+    vite: "npm:^5.4.8"
+  languageName: unknown
+  linkType: soft
+
 "typescript-eslint@npm:^8.7.0":
   version: 8.8.0
   resolution: "typescript-eslint@npm:8.8.0"
@@ -2750,7 +2770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.6.2":
+"typescript@npm:^5.5.3":
   version: 5.6.2
   resolution: "typescript@npm:5.6.2"
   bin:
@@ -2760,7 +2780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.6.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.5.3#optional!builtin<compat/typescript>":
   version: 5.6.2
   resolution: "typescript@patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=74658d"
   bin:
@@ -2769,26 +2789,6 @@ __metadata:
   checksum: 10c0/e6c1662e4852e22fe4bbdca471dca3e3edc74f6f1df043135c44a18a7902037023ccb0abdfb754595ca9028df8920f2f8492c00fc3cbb4309079aae8b7de71cd
   languageName: node
   linkType: hard
-
-"typescript@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "typescript@workspace:."
-  dependencies:
-    "@eslint/js": "npm:^9.11.1"
-    "@types/react": "npm:^18.3.10"
-    "@types/react-dom": "npm:^18.3.0"
-    "@vitejs/plugin-react": "npm:^4.3.2"
-    eslint: "npm:^9.11.1"
-    eslint-plugin-react-hooks: "npm:^5.1.0-rc.0"
-    eslint-plugin-react-refresh: "npm:^0.4.12"
-    globals: "npm:^15.9.0"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    typescript: "npm:^5.6.2"
-    typescript-eslint: "npm:^8.7.0"
-    vite: "npm:^5.4.8"
-  languageName: unknown
-  linkType: soft
 
 "unique-filename@npm:^3.0.0":
   version: 3.0.0
