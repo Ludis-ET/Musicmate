@@ -43,7 +43,10 @@ const App = () => {
               selectedPlatform={selectedPlatform}
               onSelectPlatform={setSelectedPlatform}
             />
-            <SortSelector onSelectsortOrder={setSelectedSort} />
+            <SortSelector
+              selectedSort={selectedSort}
+              onSelectsortOrder={setSelectedSort}
+            />
           </HStack>
           <GameGrid
             selectedGenre={selectedGenre}
