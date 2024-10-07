@@ -13,6 +13,7 @@ const App = () => {
   const [selectedPlatform, setSelectedPlatform] = useState<Platform | null>(
     null
   );
+  const [selectedSort, setSelectedSort] = useState<string>("");
   return (
     <>
       <Grid
@@ -39,13 +40,15 @@ const App = () => {
         <GridItem area="main">
           <HStack spacing={5} paddingLeft={2} marginBottom={5}>
             <PlatformSelector
-            selectedPlatform={selectedPlatform}
-            onSelectPlatform={setSelectedPlatform} />
-            <SortSelector />
+              selectedPlatform={selectedPlatform}
+              onSelectPlatform={setSelectedPlatform}
+            />
+            <SortSelector onSelectsortOrder={setSelectedSort} />
           </HStack>
           <GameGrid
             selectedGenre={selectedGenre}
             selectedPlatform={selectedPlatform}
+            selectedSort={selectedSort}
           />
         </GridItem>
       </Grid>
