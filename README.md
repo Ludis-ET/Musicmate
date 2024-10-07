@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# GameHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GameHub is a video game discovery web app that helps you find new and interesting games to play. With GameHub, you can search for games by platform, genre, and more. 
 
-Currently, two official plugins are available:
+This is the project we build in my Ultimate React course. You can find the full course at: https://codewithmosh.com 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+To get started with GameHub, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repository to your local machine.
+2. Run `npm install` to install the required dependencies.
+3. Get a RAWG API key at https://rawg.io/apidocs. You'll have to create an account first. 
+4. Add the API key to **src/services/api-client.ts**
+5. Run `npm run dev` to start the web server. 
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## About the Course 
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+I have designed this course to teach you everything you need to know to become a proficient React developer. This course is the first part of a two-part series, covering the fundamentals. You'll learn how to:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Build front-end apps with React and TypeScript
+- Build reusable function components
+- Style your components using vanilla CSS, CSS modules, and CSS-in-JS
+- Manage component state
+- Build forms with React Hook Forms
+- Implement form validation using Zod
+- Connect your React apps to the backend
+- Deploy your React apps
+- Use VSCode shortcuts to increase your productivity
+- Write clean code like a pro
+- Apply best practices
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+By the end of this course, you'll have a solid understanding of React and be able to build real-world applications with React and TypeScript.
+
+You can find the full course at: https://codewithmosh.com 
