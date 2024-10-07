@@ -1,5 +1,6 @@
+import { useGeres } from "../hooks/useGenres";
+
 export const GenreList = () => {
-  return (
-    <div>GenreList</div>
-  )
-}
+  const { genres } = useGeres();
+  return <div>GenreList</div>;
+};
