@@ -10,17 +10,20 @@ interface Props {
   selectedGenre: Genre | null;
   selectedPlatform: Platform | null;
   selectedSort: string;
+  search:string;
 }
 
 export const GameGrid = ({
   selectedGenre,
   selectedPlatform,
   selectedSort,
+  search
 }: Props) => {
   const { data, error, isLoading } = useGames(
     selectedGenre,
     selectedPlatform,
-    selectedSort
+    selectedSort,
+    search
   );
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
